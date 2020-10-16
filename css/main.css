@@ -1,1 +1,123 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+html {
+  height: 100vh;
+  background: #fff;
+  font-family: 'Libre Baskerville', sans-serif;
+}
+
+body > h1 {
+  text-align: center;
+}
+
+#tabs {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.tab > input {
+  display: none;
+}
+
+.tab > .tab-headers {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0 0 -0.05rem 0;
+}
+
+.tab > .tab-headers > li {
+  margin: 0 2rem 0 0;
+  padding: 0.3rem 2rem 0.5rem 2rem;
+  -webkit-text-decoration: solid underline #5f5b62 0.2rem;
+          text-decoration: solid underline #5f5b62 0.2rem;
+  border-style: solid;
+  border-radius: 0.35rem 0.35rem 0 0;
+  border-width: 0.1rem 0.1rem 0.1rem 0.1rem;
+  border-color: transparent;
+}
+
+.tab > .tab-headers > li > label {
+  cursor: pointer;
+  color: #5f5b62;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.tab > .tab-headers > li:hover {
+  border-color: #5f5b62 #5f5b62 #5f5b62 #5f5b62;
+}
+
+.tab > .tab-content {
+  padding: 1rem 2rem;
+  background: #5f5b62;
+  border-radius: 0 0.35rem 0.35rem 0.35rem;
+  -webkit-box-shadow: #00000052 0.25rem 0.25rem 1rem;
+          box-shadow: #00000052 0.25rem 0.25rem 1rem;
+  border: solid #bbb 0.1rem;
+  color: white;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 2;
+}
+
+.tab-content-1 {
+  display: none;
+}
+
+#tab-1:checked ~ section .tab-content-1 {
+  display: block !important;
+}
+
+#tab-1:checked ~ ul > li:nth-child(1) {
+  background: #5f5b62;
+  text-decoration: none;
+}
+
+#tab-1:checked ~ ul > li:nth-child(1) > label {
+  color: white;
+  font-weight: bold;
+}
+
+.tab-content-2 {
+  display: none;
+}
+
+#tab-2:checked ~ section .tab-content-2 {
+  display: block !important;
+}
+
+#tab-2:checked ~ ul > li:nth-child(2) {
+  background: #5f5b62;
+  text-decoration: none;
+}
+
+#tab-2:checked ~ ul > li:nth-child(2) > label {
+  color: white;
+  font-weight: bold;
+}
+
+.tab-content-3 {
+  display: none;
+}
+
+#tab-3:checked ~ section .tab-content-3 {
+  display: block !important;
+}
+
+#tab-3:checked ~ ul > li:nth-child(3) {
+  background: #5f5b62;
+  text-decoration: none;
+}
+
+#tab-3:checked ~ ul > li:nth-child(3) > label {
+  color: white;
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */
