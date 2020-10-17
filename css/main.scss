@@ -5,7 +5,7 @@ $tab-count : 3;
 
 html{
     height: 100vh;
-    background: #fff;
+    background: #dddddd2e;
     font-family: 'Libre Baskerville', sans-serif;
 }
 
@@ -14,7 +14,8 @@ body > h1 {
 }
 
 #tabs,
-#modal {
+#modal,
+#detail-summary {
     width: 1024px;
     margin: 0 auto 5rem auto;
     font-family: 'Libre Franklin', sans-serif;
@@ -61,7 +62,7 @@ body > h1 {
         background: #5f5b62;
         border-radius: 0 0.35rem 0.35rem 0.35rem;
         box-shadow: #00000052 0.25rem 0.25rem 1rem;
-        border: solid #bbb 0.1rem;
+        border: solid #00000052 0.1rem;
         color: white;
     }
 
@@ -87,7 +88,7 @@ body > h1 {
     }
 }
 
-.modal {
+#modal{
     & ul.modal-buttons {
         display: flex;
         list-style: none;
@@ -119,15 +120,20 @@ body > h1 {
     }
 }
 
+.modal {
+    position: fixed;
+    top: 5rem;
+    width: 1024px;
+}
+
 #regular-modal {
     display: none;
-    max-width: 1024px;
+    max-width: 960px;
     background: white;
     padding: 2rem;
     border-radius: 0.35rem;
     position: relative;
     box-shadow:  #00000052 0.25rem 0.25rem 1rem;
-
 
     & .modal-close {
         margin-top: 1rem;
@@ -162,5 +168,32 @@ body > h1 {
         display: block;
         position: absolute;
         top: 5rem;
+    }
+}
+
+#detail-summary details summary {
+    padding: 1rem;
+    background: #5f5b62;
+    color: white;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    font-weight: 700;
+    transition: background-color .4s;
+    &:hover{
+        background: #5f5b62dc;
+    }
+}
+
+#detail-summary details[open] summary ~ * {
+    animation: sweep 0.3s ease-in-out;
+}
+
+@keyframes sweep {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

@@ -10,7 +10,7 @@
 ---
 
 <p align="center"> 
-  A small project to showcase how to make web components such as: Tabs, Modals, etc. Using css and js without any framework.
+  A small project to showcase how to make web components such as: Tabs, Modals, etc. Using css and/or js without any framework.
     <br> 
 </p>
 
@@ -22,7 +22,7 @@
 ```
 
 ```
-2. Run live server
+2. Run live server or open index.html
 ```
 
 End with an example of getting some data out of the system or using it for a little demo.
