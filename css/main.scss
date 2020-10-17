@@ -13,9 +13,12 @@ body > h1 {
     text-align: center;
 }
 
-#tabs {
+#tabs,
+#modal {
     width: 1024px;
-    margin: 0 auto;
+    margin: 0 auto 5rem auto;
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 2;
 }
 
 .section-header{
@@ -23,7 +26,6 @@ body > h1 {
 }
 
 .tab{
-
     & > input {
         display: none;
     }
@@ -35,7 +37,6 @@ body > h1 {
         margin: 0 0 -0.05rem 0;
         & > li {
             margin: 0 2rem 0 0;
-            padding: 0.3rem 2rem 0.5rem 2rem;
             text-decoration: solid underline #5f5b62 0.2rem;
             border-style: solid;
             border-radius: 0.35rem 0.35rem 0 0;
@@ -44,9 +45,10 @@ body > h1 {
             & > label {
                 cursor: pointer;
                 color: #5f5b62;
-                font-family: 'Libre Franklin', sans-serif;
                 font-size: 0.8rem;
                 font-weight: 300;
+                display: block;
+                padding: 0.3rem 2rem 0.5rem 2rem;
             }
             &:hover {
                 border-color: #5f5b62 #5f5b62 #5f5b62 #5f5b62;
@@ -61,8 +63,6 @@ body > h1 {
         box-shadow: #00000052 0.25rem 0.25rem 1rem;
         border: solid #bbb 0.1rem;
         color: white;
-        font-family: 'Libre Franklin', sans-serif;
-        line-height: 2;
     }
 
 }
@@ -84,5 +84,83 @@ body > h1 {
                 font-weight: bold;
             }
         }
+    }
+}
+
+.modal {
+    & ul.modal-buttons {
+        display: flex;
+        list-style: none;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+        & li {
+            align-self: center;
+            border: solid #5f5b6287 0.1rem;
+            background: #fff;
+            border-radius: 2rem;
+            margin-right: 1.5rem;
+            & a {
+                text-decoration: none;
+                color: #5f5b62;
+                display: block;
+                padding: 0.3rem 1.5rem;
+                font-weight: 200;
+                font-size: 0.9rem;
+            }
+        }
+        & li:hover{
+            border: solid #5f5b62 0.1rem;
+            & a { 
+                text-decoration: solid underline #5f5b62 0.2rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+#regular-modal {
+    display: none;
+    max-width: 1024px;
+    background: white;
+    padding: 2rem;
+    border-radius: 0.35rem;
+    position: relative;
+    box-shadow:  #00000052 0.25rem 0.25rem 1rem;
+
+
+    & .modal-close {
+        margin-top: 1rem;
+        display: inline-block;
+        border: solid #5f5b6287 0.1rem;
+        background: #fff;
+        border-radius: 2rem;
+        text-decoration: none;
+        color: #5f5b62;
+        padding: 0.3rem 1.5rem;
+        font-weight: 200;
+        font-size: 0.9rem;
+        &:hover{
+            border: solid #5f5b62 0.1rem;
+            text-decoration: solid underline #5f5b62 0.2rem;
+            font-weight: 400;
+        }
+        &:before{
+            position: fixed;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #000000b5;
+            z-index: -1;
+            cursor: default;
+        }
+    }
+
+    &:target{
+        display: block;
+        position: absolute;
+        top: 5rem;
     }
 }
