@@ -12,7 +12,8 @@ body > h1 {
 
 #tabs,
 #modal,
-#detail-summary {
+#detail-summary,
+#fullscreen-nav {
   width: 1024px;
   margin: 0 auto 5rem auto;
   font-family: 'Libre Franklin', sans-serif;
@@ -123,41 +124,19 @@ body > h1 {
   font-weight: bold;
 }
 
-#modal ul.modal-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-#modal ul.modal-buttons li {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  border: solid #5f5b6287 0.1rem;
-  background: #fff;
-  border-radius: 2rem;
-  margin-right: 1.5rem;
-}
-
-#modal ul.modal-buttons li a {
+.modal-buttons, .nav-buttons {
   text-decoration: none;
   color: #5f5b62;
-  display: block;
+  display: inline-block;
   padding: 0.3rem 1.5rem;
   font-weight: 200;
   font-size: 0.9rem;
+  border: solid #5f5b6287 0.1rem;
+  border-radius: 2rem;
 }
 
-#modal ul.modal-buttons li:hover {
+.modal-buttons:hover, .nav-buttons:hover {
   border: solid #5f5b62 0.1rem;
-}
-
-#modal ul.modal-buttons li:hover a {
   -webkit-text-decoration: solid underline #5f5b62 0.2rem;
           text-decoration: solid underline #5f5b62 0.2rem;
   font-weight: 400;

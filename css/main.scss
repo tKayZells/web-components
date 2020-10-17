@@ -15,7 +15,8 @@ body > h1 {
 
 #tabs,
 #modal,
-#detail-summary {
+#detail-summary,
+#fullscreen-nav {
     width: 1024px;
     margin: 0 auto 5rem auto;
     font-family: 'Libre Franklin', sans-serif;
@@ -88,35 +89,19 @@ body > h1 {
     }
 }
 
-#modal{
-    & ul.modal-buttons {
-        display: flex;
-        list-style: none;
-        align-content: center;
-        margin: 0;
-        padding: 0;
-        & li {
-            align-self: center;
-            border: solid #5f5b6287 0.1rem;
-            background: #fff;
-            border-radius: 2rem;
-            margin-right: 1.5rem;
-            & a {
-                text-decoration: none;
-                color: #5f5b62;
-                display: block;
-                padding: 0.3rem 1.5rem;
-                font-weight: 200;
-                font-size: 0.9rem;
-            }
-        }
-        & li:hover{
-            border: solid #5f5b62 0.1rem;
-            & a { 
-                text-decoration: solid underline #5f5b62 0.2rem;
-                font-weight: 400;
-            }
-        }
+.modal-buttons, .nav-buttons {
+    text-decoration: none;
+    color: #5f5b62;
+    display: inline-block;
+    padding: 0.3rem 1.5rem;
+    font-weight: 200;
+    font-size: 0.9rem;
+    border: solid #5f5b6287 0.1rem;
+    border-radius: 2rem;
+    &:hover{
+        border: solid #5f5b62 0.1rem;
+        text-decoration: solid underline #5f5b62 0.2rem;
+        font-weight: 400;
     }
 }
 
