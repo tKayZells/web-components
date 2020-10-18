@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-scroll='0'>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,143 +8,156 @@
         <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
-        <h1>Web Components</h1>
-        <div id="tabs">
-            <h2>Tabs</h2>
-            <div class="tab"> 
-                <input type="radio" name="tabs" id="tab-1" checked="checked" />
-                <input type="radio" name="tabs" id="tab-2" />
-                <input type="radio" name="tabs" id="tab-3" />
-
-                <ul class="tab-headers">
-                    <li><label for="tab-1">first tab</label></li>
-                    <li><label for="tab-2">second tab</label></li>
-                    <li><label for="tab-3">third tab</label></li>
+        <nav id="top-nav">
+            <div class="menu-content">
+                <h3>Fixed topbar</h3>
+                <ul>
+                    <li><a href="#">menu link 1</a></li>
+                    <li><a href="#">menu link 1</a></li>
+                    <li><a href="#">menu link 1</a></li>
+                    <li><a href="#">menu link 1</a></li>
                 </ul>
-                
-                <section class="tab-content">
-                    <div class="tab-content-1">
-                        <h3>First Tab</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero a maiores commodi excepturi ea, officia sapiente in fugit ipsa pariatur deleniti! Veniam at hic earum similique autem ullam sint eum?s</p>
-                    </div>
-                    <div class="tab-content-2">
-                        <h3>Second Tab</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, pariatur cupiditate. Sequi odio harum, nobis, sed possimus inventore magni quod laborum doloremque natus temporibus, quo vitae culpa dicta accusamus ea.</p>
-                    </div>
-                    <div class="tab-content-3">
-                        <h3>Third Tab</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor quasi dignissimos corporis repellat tenetur provident deleniti saepe voluptatem corrupti illum. Vero alias adipisci doloremque unde dolores quae, ducimus ea corporis atque. Cumque iusto ratione perferendis. Dolorem distinctio enim cumque, iusto officiis doloribus quasi sequi optio nostrum culpa nisi assumenda officia.</p>
-                    </div>
-                </section>
             </div>
-        </div>
-        <div id="detail-summary">
-            <h2>F.A.Q</h2>
-            <details>
-                <summary>FAQ number 1</summary>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quos porro ea ducimus nemo exercitationem eveniet eaque vitae officiis sequi id dolore labore deserunt officia doloribus doloremque architecto, temporibus obcaecati soluta incidunt inventore!</p>
-                    <ul>
-                        <li>item 1</li>
-                        <li>item 1</li>
-                        <li>item 1</li>
-                        <li>item 1</li>
+        </nav>
+        <div class="main">
+            <h1>Web Components</h1>
+            <div id="tabs">
+                <h2>Tabs</h2>
+                <div class="tab"> 
+                    <input type="radio" name="tabs" id="tab-1" checked="checked" />
+                    <input type="radio" name="tabs" id="tab-2" />
+                    <input type="radio" name="tabs" id="tab-3" />
+
+                    <ul class="tab-headers">
+                        <li><label for="tab-1">first tab</label></li>
+                        <li><label for="tab-2">second tab</label></li>
+                        <li><label for="tab-3">third tab</label></li>
                     </ul>
-                </div>
-            </details>
-            <details>
-                <summary>FAQ number 2</summary>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quos porro ea ducimus nemo exercitationem eveniet eaque vitae officiis sequi id dolore labore deserunt officia doloribus doloremque architecto, temporibus obcaecati soluta incidunt inventore!</p>
-                </div>
-            </details>
-        </div>
-        <div class="group">
-            <div id="modal">
-                <h2>Modal</h2>
-                <a class="modal-buttons" href="#regular-modal">Open Modal</a>
-                <div class="modal">
-                    <section id="regular-modal">
-                        <div class="modal-content">
-                            <h3>Modal Content</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ut ducimus libero 
-                                minus asperiores temporibus magni, nam debitis alias molestias, placeat sequi reiciendis
-                                harum cupiditate quasi non molestiae inventore porro? Ipsum blanditiis ipsa at ullam sed, 
-                                veniam placeat nihil consectetur animi sit dolorem ab sunt enim distinctio doloribus deserunt 
-                                illo quae dicta in error molestiae cupiditate vel! Nulla provident modi blanditiis ea nihil iste sapiente.
-                                Voluptatibus debitis placeat maxime magnam dolore pariatur molestiae modi sapiente! Fugiat unde deleniti 
-                                numquam aliquam explicabo voluptates aspernatur dolorum sequi quos laudantium ab debitis, maiores placeat
-                                amet eveniet minima, nihil ipsam quaerat tenetur nobis repudiandae vero aperiam enim soluta? Vero eos ullam, 
-                                voluptates quaerat, itaque quos perferendis dolor nobis velit quod omnis libero, inventore id est. Illum quos
-                                assumenda deleniti cupiditate delectus culpa vero corrupti nulla aspernatur dignissimos architecto atque ea ex molestiae 
-                                minima error dolor nam rem quaerat, dicta quas iste? Ipsum odio sunt assumenda harum veniam dicta fugiat enim ex cupiditate 
-                                doloremque culpa, excepturi quod iusto ea error sint ipsa impedit mollitia quis adipisci quasi quidem aliquam ratione fugit.
-                            </p>
+                    
+                    <section class="tab-content">
+                        <div class="tab-content-1">
+                            <h3>First Tab</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero a maiores commodi excepturi ea, officia sapiente in fugit ipsa pariatur deleniti! Veniam at hic earum similique autem ullam sint eum?s</p>
                         </div>
-                        <a href="#" class="modal-close">Close Modal</a>
+                        <div class="tab-content-2">
+                            <h3>Second Tab</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, pariatur cupiditate. Sequi odio harum, nobis, sed possimus inventore magni quod laborum doloremque natus temporibus, quo vitae culpa dicta accusamus ea.</p>
+                        </div>
+                        <div class="tab-content-3">
+                            <h3>Third Tab</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor quasi dignissimos corporis repellat tenetur provident deleniti saepe voluptatem corrupti illum. Vero alias adipisci doloremque unde dolores quae, ducimus ea corporis atque. Cumque iusto ratione perferendis. Dolorem distinctio enim cumque, iusto officiis doloribus quasi sequi optio nostrum culpa nisi assumenda officia.</p>
+                        </div>
                     </section>
                 </div>
-            </div>  
-            <div id="fullscreen-nav">
-                <h2>Fullscreen Navigation</h2>
-                <a class="nav-buttons" href="#navigation">Open Navigation</a>
-                <div id="navigation" class="fullscreen-nav-overlay">
-                    <a class="nav-close" href="#">X</a>
-                    <div class="menu">
-                        <div class="menu-container">
-                            <p class="category">Category</p>
-                            <ul>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                            </ul>
-                        </div>
-                        <div class="menu-container">
-                            <p class="category">Category</p>
-                            <ul>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                            </ul>
-                        </div>
-                        <div class="menu-container">
-                            <p class="category">Category</p>
-                            <ul>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                            </ul>
-                        </div>
-                        <div class="menu-container">
-                            <p class="category">Category</p>
-                            <ul>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                            </ul>
-                        </div>
-                        <div class="menu-container">
-                            <p class="category">Category</p>
-                            <ul>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                                <li><a href="#">A link here</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> 
             </div>
-        </div>      
+            <div id="detail-summary">
+                <h2>F.A.Q</h2>
+                <details>
+                    <summary>FAQ number 1</summary>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quos porro ea ducimus nemo exercitationem eveniet eaque vitae officiis sequi id dolore labore deserunt officia doloribus doloremque architecto, temporibus obcaecati soluta incidunt inventore!</p>
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 1</li>
+                            <li>item 1</li>
+                            <li>item 1</li>
+                        </ul>
+                    </div>
+                </details>
+                <details>
+                    <summary>FAQ number 2</summary>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quos porro ea ducimus nemo exercitationem eveniet eaque vitae officiis sequi id dolore labore deserunt officia doloribus doloremque architecto, temporibus obcaecati soluta incidunt inventore!</p>
+                    </div>
+                </details>
+            </div>
+            <div class="group">
+                <div id="modal">
+                    <h2>Modal</h2>
+                    <a class="modal-buttons" href="#regular-modal">Open Modal</a>
+                    <div class="modal">
+                        <section id="regular-modal">
+                            <div class="modal-content">
+                                <h3>Modal Content</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ut ducimus libero 
+                                    minus asperiores temporibus magni, nam debitis alias molestias, placeat sequi reiciendis
+                                    harum cupiditate quasi non molestiae inventore porro? Ipsum blanditiis ipsa at ullam sed, 
+                                    veniam placeat nihil consectetur animi sit dolorem ab sunt enim distinctio doloribus deserunt 
+                                    illo quae dicta in error molestiae cupiditate vel! Nulla provident modi blanditiis ea nihil iste sapiente.
+                                    Voluptatibus debitis placeat maxime magnam dolore pariatur molestiae modi sapiente! Fugiat unde deleniti 
+                                    numquam aliquam explicabo voluptates aspernatur dolorum sequi quos laudantium ab debitis, maiores placeat
+                                    amet eveniet minima, nihil ipsam quaerat tenetur nobis repudiandae vero aperiam enim soluta? Vero eos ullam, 
+                                    voluptates quaerat, itaque quos perferendis dolor nobis velit quod omnis libero, inventore id est. Illum quos
+                                    assumenda deleniti cupiditate delectus culpa vero corrupti nulla aspernatur dignissimos architecto atque ea ex molestiae 
+                                    minima error dolor nam rem quaerat, dicta quas iste? Ipsum odio sunt assumenda harum veniam dicta fugiat enim ex cupiditate 
+                                    doloremque culpa, excepturi quod iusto ea error sint ipsa impedit mollitia quis adipisci quasi quidem aliquam ratione fugit.
+                                </p>
+                            </div>
+                            <a href="#" class="modal-close">Close Modal</a>
+                        </section>
+                    </div>
+                </div>  
+                <div id="fullscreen-nav">
+                    <h2>Fullscreen Navigation</h2>
+                    <a class="nav-buttons" href="#navigation">Open Navigation</a>
+                    <div id="navigation" class="fullscreen-nav-overlay">
+                        <a class="nav-close" href="#">X</a>
+                        <div class="menu">
+                            <div class="menu-container">
+                                <p class="category">Category</p>
+                                <ul>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-container">
+                                <p class="category">Category</p>
+                                <ul>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-container">
+                                <p class="category">Category</p>
+                                <ul>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-container">
+                                <p class="category">Category</p>
+                                <ul>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-container">
+                                <p class="category">Category</p>
+                                <ul>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                    <li><a href="#">A link here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>      
+        </div>
     </body>
 </html>
