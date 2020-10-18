@@ -22,11 +22,12 @@ body > h1 {
 
 .group {
     display: flex;
+    justify-content: start;
 }
 
 #modal,
 #fullscreen-nav {
-    margin-right: 10rem;
+    flex: 1;
 }
 
 #tabs,
