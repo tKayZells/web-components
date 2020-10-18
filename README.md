@@ -25,7 +25,11 @@
 2. Run live server or open index.html
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
+### TODO
+
+<ul>
+  <li>Make responsive</li>
+</ul>
 
 
 ## 🚀 Deployment
